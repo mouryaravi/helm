@@ -26,7 +26,7 @@ if [[ "$prefix_param" = "-p" || "$prefix_param" = "--prefix" ]]; then
 fi
 
 echo "Downloading and expanding tar"
-curl -O https://download.clojure.org/install/clojure-tools-1.10.0.411.tar.gz
+curl -kfsSL -O https://download.clojure.org/install/clojure-tools-1.10.0.411.tar.gz
 tar xzf clojure-tools-1.10.0.411.tar.gz
 
 lib_dir="$prefix_dir/lib"
